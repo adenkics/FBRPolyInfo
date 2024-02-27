@@ -7,7 +7,7 @@ rdkit
 python
 ```
 
-You can use conda to install the rdkit package: conda install -c conda-forge rdkit
+You can use conda to install the rdkit package: ```conda install -c conda-forge rdkit```
 
 ## Calculation
 You can use the following command to calculate LOI of polymer repeating unit
