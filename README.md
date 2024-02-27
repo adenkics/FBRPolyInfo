@@ -1,6 +1,8 @@
 # FBRPolyInfo
 Data mining and machine learning based calculation of polymer structure-activity relationships
+
 ![image](https://github.com/adenkics/FBRPolyInfo/blob/main/img/FRPM2023-Plenary-Final.jpg)
+
 ## Contact
 Thank you for your interest in our work!
 
