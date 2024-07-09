@@ -1,0 +1,19 @@
+from flask import Flask, request, jsonify
+from rdkit import Chem
+
+app = Flask(__name__)
+
+@app.route('/validation_smiles', methods=['POST'])
+def validation_smiles():
+    data = request.get_json()
+    smiles = data.get('smiles','')
+    try:
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return jsonify({'valid': False, 'message': 'Invalid SMILES'})
+        return jsonify({'valid': True, 'message': 'Valid SMILES'})
+    except Exception as e:
+        return jsonify({'valid': False, 'message': str(e)})
+
+if __name__ == '__main__':
+    app.run(debug=True)

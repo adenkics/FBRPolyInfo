@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOI Formula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>f(x) LOI Formula</h1>
+        <form id="loi-form">
+            <input type="text" id="input-formula" placeholder="Polymer repeat unit" />
+            <div class="file-upload">
+                <label for="file-upload" class="custom-file-upload">
+                    Select files to upload
+                </label>
+                <input id="file-upload" type="file" multiple />
+            </div>
+            <div class="options">
+                <select id="output-format">
+                    <option value="0">Digits .0</option>
+                    <option value="1">Digits .1</option>
+                    <option value="2">Digits .2</option>
+                    <option value="3">Digits .3</option>
+                </select>
+                <label class="output-formula-label">
+                    <input type="checkbox" id="output-formula" checked /> Output Formula
+                </label>
+                <button type="button" id="predict-btn">Predict LOI</button>
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
