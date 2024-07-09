@@ -13,7 +13,7 @@ You can use conda to install the rdkit package: ```conda install -c conda-forge 
 You can use the following command to calculate LOI of polymer repeating unit
 
 ```
- python CalcLOI.py [--repeat_unit_SMILES REPEAT_UNIT_SMILES] [--CR CR] [--out_formula] [--digits DIGITS]
+ python CalcLOI.py [--repeat_unit_SMILES REPEAT_UNIT_SMILES] [--out_formula] [--digits DIGITS]
 ```
 
 
